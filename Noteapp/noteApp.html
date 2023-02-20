@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Note App</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <header>
+        <a class="link" href="/notes">Go to Notes</a>    
+    </header>
+    <div id="content" class = "hidden">
+    </div>
+    <input type="text" placeholder="Enter your name..." id="name">
+    <input type="submit" value="Enter" id="add">
+    <blockquote></blockquote>
+    
+    <form action="/write" method="get">
+        <input type="text" placeholder="Write your note..." id="mytext" class="box" name="w" >
+        <input type="submit" value="Add to notes">
+    </form>
+    
+
+    <form action="/search" method="get">
+        <input type="text" placeholder= "Word to search..." id="note" class="box" name="q" >
+        <input type="submit" value="Search">
+    </form>
+
+    <script >
+        const buttonAdd= document.getElementById("add")
+        const content = document.getElementById("content")
+        function get_name(){
+            if (content.children.length>0){                
+                localStorage.removeItem("username")
+                content.innerHTML=""
+            }
+            const name = document.getElementById("name").value    
+                localStorage.setItem("username", name)
+                const newPara = document.createElement("p")
+                newPara.innerText = "Welcome, " + name + "!"  
+                content.appendChild(newPara);       
+        }
+        buttonAdd.addEventListener("click", get_name)
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.length !== 0) {
+                const name = localStorage.getItem("username").split(',');
+                if (name[0] != "") {
+                    for (let index = 0; index < name.length; index++) {
+                        const newPara = document.createElement("p")
+                        newPara.innerText += "Welcome back, " + name[index] + "!"
+                        content.appendChild(newPara);
+                    }
+                }
+            }
+        })
+       
+    </script> 
+</body>
+</html>

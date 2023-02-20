@@ -1,0 +1,16 @@
+header{
+    text-align: left;
+    font-size: 15px;
+    color: blue;
+    border-bottom : 2px solid black;
+}
+
+div{
+    padding-top: 15px; color: #373737;
+    padding-bottom: 15px; color: #373737;
+    padding-left: 15px; color: #373737;
+    padding-right: 15px; color: #373737;
+    background-color: #373737;
+    text-align: center;
+    font-size: 30px; color: white;
+}

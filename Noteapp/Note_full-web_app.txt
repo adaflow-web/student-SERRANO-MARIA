@@ -1,0 +1,20 @@
+Create an html file for the homepage
+    Text box for asking the username
+    Submit button
+    Div with empty paragraph to display the welcome message
+    Menu
+        Text box and submit button to add notes
+        Text box and submit button to search for notes
+        A button or a link to go to the view of all notes
+
+Create a second html file to show the notes
+    A link to the homepage
+
+Create a python file or modify the one I already have
+    Import flask
+    Function to get the html and a route
+    Function to write the notes and store them
+    Function to get the notes and a route
+    function to search the notes and a route
+
+Create a static folder with the css
