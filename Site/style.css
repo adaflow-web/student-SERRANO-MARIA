@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+header{
+    text-align: right;
+    color: red; font-size: 14px;
+}
+
+.link{
+    color: red;
+}
+
+h1{
+    background-color: #373737;
+    color: white;
+    text-align: center;
+    
+}
+
+h2{
+    color: green;
+    
+}
+
+
+footer{
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid black;
+   
+}
+.end{
+    color: #373737;
+    font-size: 18px;
+}
+
