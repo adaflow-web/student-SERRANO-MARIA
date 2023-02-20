@@ -1,0 +1,31 @@
+div{
+    padding-top: 15px; color: #373737;
+    padding-bottom: 15px; color: #373737;
+    padding-left: 15px; color: #373737;
+    padding-right: 15px; color: #373737;
+    background-color: #373737;
+    text-align: center;
+    font-size: 30px; color: white;
+}
+
+footer{
+    text-align: center;
+}
+
+.green{
+    background-color: green;
+    font-size: 20px; color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    size-adjust: 20;
+}
+.yellow{
+    background-color: rgb(204, 191, 8);
+    font-size: 20px; color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    size-adjust: 20;
+}
+.red{
+    background-color: red;
+    font-size: 20px; color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    size-adjust: 20;
+
+}
