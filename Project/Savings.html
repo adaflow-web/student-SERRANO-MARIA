@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings | Lifestyle</title>
+    <link rel="stylesheet" href="static\style.css">
+    <script src="static/sweetalert2.all.min.js"></script>
+    <link rel="ICON" href="static/img/favicon-512x512-saving.png" type="png" sizes="512x512">
+</head>
+<body onload="on_load()">
+    <div class="main">
+        <header>
+          <div class="navbar">
+            <a href="http://localhost:5000">Home</a>
+            <a href="/expenses">Expenses</a>
+            <a href="/savings" style="background-color: #63bfb9; font-weight: 600;">Savings</a>
+
+            </div> 
+        </header>
+    </div>
+          
+          <div class= "main_expenses">    
+          
+            <img class="logo" src="static/img/Combined.png" width="100%">
+          </div>
+        </div>
+      
+            <div class="container">
+                
+                <table  width ="60%" height ="300px" style="border:3px solid; border-collapse:collapse; margin:auto; text-align:center;">    
+                    <h2>WEEK CHALLENGE</h2>
+                    
+                <tr>
+                    <td class ="number"><button class="week_number" id="1" onclick="checkWeeksInDatabase(this)">1</button></td>
+                    <td class ="number"><button class="week_number" id="2" onclick="checkWeeksInDatabase(this)">2</button></td>
+                    <td class ="number"><button class="week_number" id="3" onclick="checkWeeksInDatabase(this)">3</button></td>
+                    <td class ="number"><button class="week_number" id="4" onclick="checkWeeksInDatabase(this)">4</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="5" onclick="checkWeeksInDatabase(this)">5</button></td>
+                    <td class ="number"><button class="week_number" id="6" onclick="checkWeeksInDatabase(this)">6</button></td>                
+                    <td class ="number"><button class="week_number" id="7" onclick="checkWeeksInDatabase(this)">7</button></td>
+                    <td class ="number"><button class="week_number" id="8" onclick="checkWeeksInDatabase(this)">8</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="9" onclick="checkWeeksInDatabase(this)">9</button></td>
+                    <td class ="number"><button class="week_number" id="10" onclick="checkWeeksInDatabase(this)">10</button></td>
+                    <td class ="number"><button class="week_number" id="11" onclick="checkWeeksInDatabase(this)">11</button></td>
+                    <td class ="number"><button class="week_number" id="12" onclick="checkWeeksInDatabase(this)">12</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="13" onclick="checkWeeksInDatabase(this)">13</button></td>
+                    <td class ="number"><button class="week_number" id="14" onclick="checkWeeksInDatabase(this)">14</button></td>
+                    <td class ="number"><button class="week_number" id="15" onclick="checkWeeksInDatabase(this)">15</button></td>
+                    <td class ="number"><button class="week_number" id="16" onclick="checkWeeksInDatabase(this)">16</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="17" onclick="checkWeeksInDatabase(this)">17</button></td>
+                    <td class ="number"><button class="week_number" id="18" onclick="checkWeeksInDatabase(this)">18</button></td>
+                    <td class ="number"><button class="week_number" id="19" onclick="checkWeeksInDatabase(this)">19</button></td>
+                    <td class ="number"><button class="week_number" id="20" onclick="checkWeeksInDatabase(this)">20</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="21" onclick="checkWeeksInDatabase(this)">21</button></td>
+                    <td class ="number"><button class="week_number" id="22" onclick="checkWeeksInDatabase(this)">22</button></td>
+                    <td class ="number"><button class="week_number" id="23" onclick="checkWeeksInDatabase(this)">23</button></td>
+                    <td class ="number"><button class="week_number" id="24" onclick="checkWeeksInDatabase(this)">24</button></td>
+                    <tr>
+                    <td class ="number"><button class="week_number" id="25" onclick="checkWeeksInDatabase(this)">25</button></td>
+                    <td class ="number"><button class="week_number" id="26" onclick="checkWeeksInDatabase(this)">26</button></td>
+                    <td class ="number"><button class="week_number" id="27" onclick="checkWeeksInDatabase(this)">27</button></td>
+                    <td class ="number"><button class="week_number" id="28" onclick="checkWeeksInDatabase(this)">28</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="29" onclick="checkWeeksInDatabase(this)">29</button></td>
+                    <td class ="number"><button class="week_number" id="30" onclick="checkWeeksInDatabase(this)">30</button></td>
+                    <td class ="number"><button class="week_number" id="31" onclick="checkWeeksInDatabase(this)">31</button></td>
+                    <td class ="number"><button class="week_number" id="32" onclick="checkWeeksInDatabase(this)">32</button></td>
+                </tr>
+                <tr>
+                    
+                    <td class ="number"><button class="week_number" id="33" onclick="checkWeeksInDatabase(this)">33</button></td>
+                    <td class ="number"><button class="week_number" id="34" onclick="checkWeeksInDatabase(this)">34</button></td>
+                    <td class ="number"><button class="week_number" id="35" onclick="checkWeeksInDatabase(this)">35</button></td>
+                    <td class ="number"><button class="week_number" id="36" onclick="checkWeeksInDatabase(this)">36</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="37" onclick="checkWeeksInDatabase(this)">37</button></td>
+                    <td class ="number"><button class="week_number" id="38" onclick="checkWeeksInDatabase(this)">38</button></td>
+                    <td class ="number"><button class="week_number" id="39" onclick="checkWeeksInDatabase(this)">39</button></td>
+                    <td class ="number"><button class="week_number" id="40" onclick="checkWeeksInDatabase(this)">40</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="41" onclick="checkWeeksInDatabase(this)">41</button></td>
+                    <td class ="number"><button class="week_number" id="42" onclick="checkWeeksInDatabase(this)">42</button></td>
+                    <td class ="number"><button class="week_number" id="43" onclick="checkWeeksInDatabase(this)">43</button></td>
+                    <td class ="number"><button class="week_number" id="44" onclick="checkWeeksInDatabase(this)">44</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="45" onclick="checkWeeksInDatabase(this)">45</button></td>
+                    <td class ="number"><button class="week_number" id="46" onclick="checkWeeksInDatabase(this)">46</button></td>
+                    <td class ="number"><button class="week_number" id="47" onclick="checkWeeksInDatabase(this)">47</button></td>
+                    <td class ="number"><button class="week_number" id="48" onclick="checkWeeksInDatabase(this)">48</button></td>
+                </tr>
+                <tr>
+                    <td class ="number"><button class="week_number" id="49" onclick="checkWeeksInDatabase(this)">49</button></td>
+                    <td class ="number"><button class="week_number" id="50" onclick="checkWeeksInDatabase(this)">50</button></td>
+                    <td class ="number"><button class="week_number" id="51" onclick="checkWeeksInDatabase(this)">51</button></td>
+                    <td class ="number"><button class="week_number" id="52" onclick="checkWeeksInDatabase(this)">52</button></td>
+                </tr>
+                </table>
+                <p class="prueba">With this challenge you'll be able to save 1378 CHF. As you know, each year has a total of 52 weeks.  
+                    Each week is represented by its number in this table, and it's the amount you'll have to save. Each week you have to 
+                    choose a number and save that amount. You can start the year saving 1 CHF/52 CHF and continue from there in strict 
+                    ascending/descending order, or you can choose the number depending on how much money you have that week.      
+                </p>
+                <button class = "savings" onclick="on_load_savings()">Already saved</button>
+                <div id="challenge" class ="hidden">
+                </div>
+                </div>
+                
+    <script src="static/project.js"></script>
+
+</body>
+</html>

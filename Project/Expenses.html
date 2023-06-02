@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expenses | Lifestyle</title>
+  <link rel="stylesheet" href="static\style.css" />
+  <script src="static/sweetalert2.all.min.js"></script>
+  <script src="static/project.js"></script>
+  <link rel="ICON" href="static/img/favicon-512x512-saving.png" type="png" sizes="512x512">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
+</script>
+
+<body>
+  <div class="main">
+    <header>
+      <div class="navbar" id="myTopnav">
+        <div class="links">
+          <a href="http://localhost:5000" class="first">Home</a>
+          <a href="/expenses" style="background-color: #63bfb9; font-weight: 600;">Expenses</a>
+          <a href="/savings">Savings</a>
+        </div>
+        <div class="bt">
+          <a class="add" onclick="wind_salary()" id="salary">Add salary</a>
+          <a class="save" onclick="send_data()">Save expenses</a>
+          <a href="/summary">Summary</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    </header>
+  </div>
+
+  <div class="main_expenses">
+    <img class="logo" src="static/img/Combined.png" width="100%">
+  </div>
+  <div class="container">
+    <div>
+      <div class="category">
+        <h2>Basic needs once per month
+      </div>
+      <table class="table">
+        <tr>
+          <td>
+            <img src="static/img/Home.jpg" name="image2" width="199" height="170.5" id="image2"
+              onClick="call_wind(this)" data-category="Basic_needs_monthly" data-subcategory="Mortgage-Rent" />
+          </td>
+          <td>
+            <img src="static/img/Car.jpg" name="image" width="199" height="170.5" id="image" onClick="call_wind(this)"
+              data-category="Basic_needs_monthly" data-subcategory="Car_loan" />
+          </td>
+          <td>
+            <img src="static/img/Insurance.jpg" name="img" width="199" height="170.5" id="img" onClick="call_wind(this)"
+              data-category="Basic_needs_monthly" data-subcategory="Insurance" />
+          </td>
+          <td>
+            <img src="static/img/Electricity.jpg" name="img2" width="199" height="170.5" id="img2"
+              onClick="call_wind(this)" data-category="Basic_needs_monthly" data-subcategory="Electricity" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="static/img/Water.jpg" name="img3" width="199" height="170.5" id="img3" onClick="call_wind(this)"
+              data-category="Basic_needs_monthly" data-subcategory="Water" />
+          </td>
+          <td>
+            <img src="static/img/Mobile.jpg" name="img4" width="199" height="170.5" id="img4" onClick="call_wind(this)"
+              data-category="Basic_needs_monthly" data-subcategory="Mobile-Internet" />
+          </td>
+          <td>
+            <img src="static/img/Plus.jpg" name="others2" width="199" height="170.5" id="others2"
+              onClick="call_wind(this)" data-category="Basic_needs_monthly" data-subcategory="" />
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-images">
+      <div class="category">
+        <h2>Basic needs
+      </div>
+      <table class="table">
+        <tr>
+          <td>
+            <img src="static/img/Supermarket.jpg" width="199" height="170.5" alt="" onClick="call_wind(this)"
+              data-category="Basic_needs" data-subcategory="Supermarket" />
+          </td>
+          <td>
+            <img src="static/img/Fuel.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Basic_needs" data-subcategory="Fuel-Transport" />
+          </td>
+          <td>
+            <img src="static/img/Clothes.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Basic_needs" data-subcategory="Clothes" />
+          </td>
+          <td>
+            <img src="static/img/Plus.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Basic_needs" data-subcategory="" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-images">
+      <div class="category">
+        <h2>Personal development</h2>
+      </div>
+      <table class="table">
+        <tr>
+          <td>
+            <img src="static/img/Education.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Personal_development" data-subcategory="Education" />
+          </td>
+          <td>
+            <img src="static/img/Books.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Personal_development" data-subcategory="Books" />
+          </td>
+          <td width="171">
+            <img src="static/img/Plus.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Personal_development" data-subcategory="" />
+          </td>
+          <td width="171">&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <div class="table-images">
+      <div class="category">
+        <h2>Leisure</h2>
+      </div>
+      <table class="table" width="710">
+        <tr>
+          <td>
+            <img src="static/img/Trips.jpg" width="199" height="170.5" onClick="call_wind(this)" data-category="Leisure"
+              data-subcategory="Trips" />
+          </td>
+          <td>
+            <img src="static/img/Eating.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Leisure" data-subcategory="Eating_out" />
+          </td>
+          <td>
+            <img src="static/img/Tickets.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Leisure" data-subcategory="Match_tickets" />
+          </td>
+          <td>
+            <img src="static/img/Cinema.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Leisure" data-subcategory="Cinema" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="static/img/Subscriptions.jpg" width="199" height="170.5" onClick="call_wind(this)"
+              data-category="Leisure" data-subcategory="Subscriptions" />
+          </td>
+          <td>
+            <img src="static/img/Plus.jpg" width="199" height="170.5" onClick="call_wind(this)" data-category="Leisure"
+              data-subcategory="" />
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="table-images">
+        <div class="category">
+          <h2>Donations</h2>
+        </div>
+        <table class="table">
+          <tr>
+            <td>
+              <img src="static/img/Gifts.jpg" width="199" height="170.5" alt="" onClick="call_wind(this)"
+                data-category="Donations" data-subcategory="Gifts" />
+            </td>
+            <td>
+              <img src="static/img/Donations.jpg" width="199" height="170.5" onClick="call_wind(this)"
+                data-category="Donations" data-subcategory="Donations" />
+            </td>
+            <td>
+              <img src="static/img/Tips.jpg" width="199" height="170.5" onClick="call_wind(this)"
+                data-category="Donations" data-subcategory="Tips" />
+            </td>
+            <td>
+              <img src="static/img/Plus.jpg" width="199" height="170.5" onClick="call_wind(this)"
+                data-category="Donations" data-subcategory="" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

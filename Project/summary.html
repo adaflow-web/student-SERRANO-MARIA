@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses: Sumary | Lifestyle</title>
+    <script src="static/sweetalert2.all.min.js"></script>
+    <script src="static/project.js"></script>  
+    <link rel="ICON" href="static/img/favicon-512x512-saving.png" type="png" sizes="512x512">
+    <style>
+
+.navbar {
+  overflow: hidden;
+  z-index: 100;
+  background-color: #125e59;
+  /* Set the color of the navbar */
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0px; 
+  /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%;
+  /* Full width */
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  font-family:'cambria';
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #63bfb9;
+  color: #125e59;
+  font-weight: 600;
+}
+.navbar_expenses:hover{
+  background: #63bfb9;
+  color: black;
+}
+
+        table {
+
+            margin-top: 47px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        td,
+        th {
+            border: 1px solid #63bfb9;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th{
+            color: #125e59;
+        }
+    
+       
+    </style>
+</head>
+<body>
+    <header>
+    <div class="main">
+        
+          <div class="navbar">
+            <a href="http://localhost:5000" style="background-color: #63bfb9; font-weight: 600;">Home</a>
+            <a href="/expenses">Expenses</a>
+            <a href="/savings">Savings</a> 
+            </div> 
+
+        </div>    
+        </header>
+    
+    <blockquote></blockquote>
+    <div>
+    $$SUMMARY$$
+</div>
+</body>
+</html>
